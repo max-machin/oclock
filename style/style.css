@@ -10,7 +10,16 @@ html, body {
 /*--------------------------Style général--------------------------*/
 
 body {
-    background-color: #f7faff;
+    background-color: #e0e5ec;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 li {  
@@ -32,6 +41,7 @@ h1 {
 /*-------------------------Style NAVBAR-----------------------------*/
 
 nav {
+    box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7;
     height: 60px;
 }
 
@@ -41,7 +51,6 @@ nav ul{
     gap: 7%;
     line-height: 60px;
     align-items: center;
-    border-bottom: 1px solid #e6e6e6;
 }
 
 nav ul li a {
@@ -51,12 +60,13 @@ nav ul li a {
 }
 
 .home {
+    border: none;
     cursor: pointer;
     border-radius: 2px;
     margin: 1vh;
     padding: 2vh;
     position: absolute;
-    background-color: #1a1a1a;
+    background-color: #8208e6;
 }
 
 .home a{
@@ -65,10 +75,89 @@ nav ul li a {
 
 .home:hover {
     transition: .5s;
-    background-color: white;
+    background-color: #E4EBF5;
+    box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem #FFFFFF;
 }
 
 .home:hover > a {
     transition: .5s;
+    color: #8208e6;
+}
+
+.home:active {
+    box-shadow:  0.2rem 0.2rem 0.5rem #FFFFFF,-0.3rem -0.3rem 0.6rem #c8d0e7;
+}
+
+/*--------------------Style FOOTER ---------------------*/
+footer {
+    box-shadow: -0.2rem -0.2rem 0.5rem #c8d0e7;
+    margin-bottom: 3vh;
+    border-top: 1px solid #e6e6e6;
+    text-align: center;
+}
+
+footer h2 {
+    margin-top: 3vh;
+    font-family: "League Spartan";
+}
+
+footer ul {
+    margin-top: 3vh;
+    justify-content: center;
+    gap: 5vh;
+    display: flex;
+}
+
+footer ul li {
+    font-family: "League Spartan";
+}
+
+/*--------------------Style MINUTEUR ---------------------*/
+
+.minuteur_section {
+    text-align: center;
+}
+
+.minuteur {
+    line-height: 50px;
+    align-items: center;
+    font-family: "League Spartan", sans-serif;
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    /* border: 1px solid #1a1a1a; */
+    /* background-color: #1a1a1a; */
+    padding: 5vh 3vh;
+    border-radius: 4px;
+    margin: 5% auto;
+    box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem #FFFFFF;
+ }
+
+.minuteur_item {
     color: black;
+    font-size: 50px;
+    /* font-size: 36px; */
+    font-weight: bold;
+}
+
+.minuteur_button {
+    background-color: #ecf0f3;
+    box-shadow: 6px 6px 9px #0d275057, -10px -10px 12px #ffffff;
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+    margin-left: 50px;
+    border-radius: 50%;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: #8208e6;
+    cursor: pointer;
+}
+
+.minuteur_start {
+    background-color: #00b84c;
+}
+
+.minuteur_stop {
+    background-color: #ff0256;
 }

@@ -14,10 +14,11 @@
     <title>O'Clock</title>
 </head>
 <body class="light">
+    <main>
     <nav>
-        <div  class="home">
+        <button  class="home">
             <a href="index.php"><i class="fa-solid fa-house-chimney"></i></a>
-        </div>
+        </button>
         <ul>
             <li><a href="minuteur.php">Minuteur</a></li>
             <li><a href="">Chronomètre</a></li>
@@ -25,5 +26,4 @@
             <li><a href="">Horloge</a></li>
         </ul>
     </nav>
-</body>
-</html>
+    
