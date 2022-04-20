@@ -5,7 +5,7 @@ require 'ressources/header.php';
 <section class="section_gen chrono">
     <div class="componant_gen">
         <article>
-            <div><time>00:00:00</time></div>
+            <div><time class="time">00:00:00</time></div>
         </article>
 
         <article class="componant_control chrono">
