@@ -38,12 +38,23 @@ window.addEventListener("DOMContentLoaded", (event) => {
     }
 
     start.addEventListener('click', function() {
-        function startInterval(){
-            debutChrono = setInterval(function() {
-                minuteur()
-            }, 1000)
+        if(h.value==0 && m.value==0 && s.value==0 ){
+            h.style.border = '1px solid #ff0256'
+            m.style.border = '1px solid #ff0256'
+            s.style.border = '1px solid #ff0256'
+        } else {
+            fin.innerHTML = ""
+            h.style.border = "none"
+            m.style.border = 'none'
+            s.style.border = 'none'
+            function startInterval(){
+                debutChrono = setInterval(function() {
+                    minuteur()
+                }, 1000)
+            }
+            startInterval()
         }
-        startInterval()
+        
     })
 
     pause.addEventListener('click', function() {
