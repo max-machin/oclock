@@ -48,6 +48,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
         debutChrono()
         start.classList.add('none')
         pause.classList.remove('none')
+        viewTemps.classList.remove('error')
     })
 
     pause.addEventListener('click', function(){
@@ -63,13 +64,21 @@ window.addEventListener("DOMContentLoaded", (event) => {
         heures = 0
         milliseconds = 0
         tempsComponant.innerHTML = "<p>Temps : </p>"
+        viewTemps.classList.remove('error')
     })
 
     
     tour.addEventListener('click', function(){
         var tour = document.createElement("li")
-        tour.innerText = (heures > 9 ? heures : "0" + heures) + ":" + (minutes > 9 ? minutes : "0" + minutes) + ":" + (secondes > 9 ? secondes : "0" + secondes) + ":" + (milliseconds > 9 ? milliseconds : "0" + milliseconds);
-        tempsComponant.appendChild(tour)
+        if (heures == 0 && minutes == 0 && secondes == 0 && milliseconds == 0){
+            viewTemps.classList.add('error')
+        } else {
+            viewTemps.classList.remove('error')
+            tour.innerText = (heures > 9 ? heures : "0" + heures) + ":" + (minutes > 9 ? minutes : "0" + minutes) + ":" + (secondes > 9 ? secondes : "0" + secondes) + ":" + (milliseconds > 9 ? milliseconds : "0" + milliseconds);
+            tempsComponant.appendChild(tour)
+        }
+        
+        
     })
 
 })

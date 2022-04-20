@@ -18,7 +18,7 @@ require 'ressources/header.php';
                 </article>
             </article>
             <ul class="liste_temps">
-                <p>Temps : </p>
+                <p>Liste des temps : </p>
             </ul>
 
         </div>

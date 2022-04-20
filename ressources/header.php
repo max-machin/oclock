@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="style/style.css">
     <title>O'Clock</title>
 </head>
-<body class="light">
+<body>
     <main>
     <nav>
         <button  class="home">
@@ -25,5 +25,9 @@
             <li><a href="">Réveil</a></li>
             <li><a href="">Horloge</a></li>
         </ul>
+        <div class="theme">
+            <button class="light_theme none"><i class="fas fa-solid fa-sun"></i></button>
+            <button class="dark_theme"><i class="fas fa-solid fa-moon"></i></button>
+        </div>
     </nav>
     
