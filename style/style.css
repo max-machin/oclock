@@ -106,9 +106,9 @@ footer ul li {
     font-family: "League Spartan";
 }
 
-/*--------------------Style MINUTEUR ---------------------*/
-
-.minuteur_section {
+/*--------------------Style CONTENANT GENERAL  ---------------------*/
+.section_gen {
+    font-family: "League Spartan";
     margin: auto;
     margin-top: 5%;
     width: 40%;background: #ecf0f3;
@@ -116,32 +116,23 @@ footer ul li {
     border-radius: 10px;
     padding: 4vh;
 }
-
-.minuteur {
-    font-family: "League Spartan";
-    
-}
-
-.minuteur_input div{
+.componant_gen div{
     align-items: center;
     display: flex;
     justify-content: space-around;
 }
 
-.minuteur_input h2 {
+.componant_gen h2 {
     margin-bottom: 2vh;
 }
 
-.minuteur_input div label, .minuteur_input div input {
-    padding-left: 20px;
+.componant_gen div label, .componant_gen div input {
     font-weight: 500;
 }
-
-
-.minuteur_input div label {
+.componant_gen div label {
     margin-bottom: 1vh;
 }
-.minuteur_input div input {
+.componant_gen div input {
     text-align: center;
     width: 25%;
     border: none;
@@ -169,7 +160,7 @@ footer ul li {
     color: #8208e6;
 }
 
-.minuteur_input button {
+.componant_gen button {
     cursor: pointer;
     height: 60px;
     width: 60px;
@@ -181,11 +172,12 @@ footer ul li {
     box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
 }
 
-.minuteur_input button:hover, .minuteur_input button:active{
+.componant_gen button:hover, .componant_gen button:active{
     box-shadow: 5px 5px 10px white, -5px -5px 10px #cbced1;
 }
+/*--------------------Style MINUTEUR ---------------------*/
 
-.minuteur_control {
+.componant_control {
     margin-top: 2vh;
     text-align: center;
 }

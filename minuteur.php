@@ -2,10 +2,9 @@
 require 'ressources/header.php';
 ?>
 <h1>Minuteur</h1>
-<section class="minuteur_section">
-    <article>
+<section class="section_gen minuteur">
 
-        <div class="minuteur_input minuteur">
+        <div class="componant_gen">
 
             <div>
                 <label for="heur">Heures</label>
@@ -24,7 +23,7 @@ require 'ressources/header.php';
                 <p class="fin"></p>
             </div>
 
-            <article class="minuteur_control minuteur">
+            <article class="componant_control">
                 <button id="start" class="btn-start"><i class="fas fa-solid fa-play"></i></button>
                 <button id="pause" class="btn-stop"><i class="fa-solid fa-pause"></i></button>
                 <button id="reset" class="btn-reset"><i class="fa-solid fa-stopwatch"></i></button>
@@ -34,8 +33,6 @@ require 'ressources/header.php';
         </div>
 
         
-        
-    </article>
 </section>
 
 <script type="text/javascript" src="js/minuteur.js"></script>
