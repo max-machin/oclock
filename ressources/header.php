@@ -21,7 +21,7 @@
         </button>
         <ul>
             <li><a href="minuteur.php">Minuteur</a></li>
-            <li><a href="">Chronomètre</a></li>
+            <li><a href="chronometre.php">Chronomètre</a></li>
             <li><a href="">Réveil</a></li>
             <li><a href="">Horloge</a></li>
         </ul>
