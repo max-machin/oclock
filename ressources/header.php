@@ -23,7 +23,7 @@
             <li><a href="minuteur.php">Minuteur</a></li>
             <li><a href="chronometre.php">Chronomètre</a></li>
             <li><a href="">Réveil</a></li>
-            <li><a href="">Horloge</a></li>
+            <li><a href="horloge.php">Horloge</a></li>
         </ul>
         <div class="theme">
             <button class="light_theme none"><i class="fas fa-solid fa-sun"></i></button>

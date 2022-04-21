@@ -1,7 +1,6 @@
 <?php
 require 'ressources/header.php';
 ?>
-<main>
     <h1>Minuteur</h1>
     <section class="section_gen minuteur">
 
@@ -35,7 +34,6 @@ require 'ressources/header.php';
 
             
     </section>
-</main>
 <script type="text/javascript" src="js/minuteur.js"></script>
 <?php
 require 'ressources/footer.php';
