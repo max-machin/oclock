@@ -2,6 +2,7 @@
 require 'ressources/header.php';
 ?>
 <h1>Horloge</h1>
+
 <section class="section_horloge">
     <div class="horloge">
         <div class="heure_horloge">
@@ -13,6 +14,17 @@ require 'ressources/header.php';
         <div class="secondes_horloge">
             <div class="s_horloge" id="s_horloge"></div>
         </div>
+    </div>
+    <div class="heure_horloge_numerique">
+        <p class="heure_numerique"></p>
+    </div>
+    <div class="horloge_numerique">
+        <div class="date_numerique numerique">
+            <p class="jour"></p>
+            <p class="jour_numerique"></p>
+            <p class="mois"></p>
+            <p class="annee"></p>
+        </div> 
     </div>
 </section>
 
