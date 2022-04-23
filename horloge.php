@@ -16,7 +16,15 @@ require 'ressources/header.php';
         </div>
     </div>
     <div class="heure_horloge_numerique">
-        <p class="heure_numerique"></p>
+        <div>
+            <p class="heure_numerique"></p><p>Heures</p>
+        </div>
+        <div>
+            <p class="minute_numerique"></p><p>Minutes</p>
+        </div>
+        <div>
+            <p class="secondes_numerique"></p><p>Secondes</p>
+        </div>
     </div>
     <div class="horloge_numerique">
         <div class="date_numerique numerique">

@@ -60,12 +60,16 @@ window.addEventListener("DOMContentLoaded", (event) => {
             var secondes_numerique = heure_date_numerique.getSeconds()
         
             /*Récupération de l'élément HTML servant à l'affichage de l'heure */
-            var horloge_numerique = document.querySelector(".heure_numerique")
+            var heure_horloge_numerique = document.querySelector(".heure_numerique")
+            var minute_horloge_numerique = document.querySelector(".minute_numerique")
+            var seconde_horloge_numerique = document.querySelector(".secondes_numerique")
         
             /**
              * Gestion de l'affichage de l'heure en fonction de si valeur $variable > 9 alors mettre un "0" devant = 01, 02
              */
-            horloge_numerique.textContent =  (heures_numerique > 9 ? heures_numerique : "0" + heures_numerique) + ":" + (minutes_numerique > 9 ? minutes_numerique : "0" + minutes_numerique) + ":" + (secondes_numerique > 9 ? secondes_numerique : "0" + secondes_numerique)
+            heure_horloge_numerique.textContent =  (heures_numerique > 9 ? heures_numerique : "0" + heures_numerique)
+            minute_horloge_numerique.textContent = (minutes_numerique > 9 ? minutes_numerique : "0" + minutes_numerique)
+            seconde_horloge_numerique.textContent = (secondes_numerique > 9 ? secondes_numerique : "0" + secondes_numerique)
         }, 1000)
     }
     

@@ -91,8 +91,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
         secondes = 0
         minutes = 0
         heures = 0
-        milliseconds = 0
-        tempsComponant.innerHTML = "<p>Temps : </p>"
+        milliseconds = 0 
+        tempsComponant.innerHTML = "<p>Liste des temps : </p>"
         viewTemps.classList.remove('error')
     })
 

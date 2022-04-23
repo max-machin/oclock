@@ -199,7 +199,8 @@ footer ul li {
     font-size: 18px;
     margin-bottom: 1vh;
 }
-.componant_gen div input {
+
+.componant_gen div input{
     text-align: center;
     width: 25%;
     border: none;
@@ -235,7 +236,7 @@ footer ul li {
     color: #8208e6;
 }
 
-.componant_gen button {
+.componant_gen button, .reveil button {
     cursor: pointer;
     height: 60px;
     width: 60px;
@@ -256,7 +257,7 @@ footer ul li {
     box-shadow: 7px 7px 10px rgba(255, 255, 255, 0.08), -5px -5px 8px rgba(0, 0, 0, 0.56);
 }
 
- .componant_gen button:active{
+ .componant_gen button:active, .reveil button:active {
     box-shadow: 5px 5px 10px white, -5px -5px 10px #cbced1;
 }
 /*--------------------Style MINUTEUR ---------------------*/
@@ -515,13 +516,61 @@ footer ul li {
 }
 
 .heure_horloge_numerique {
-    padding: 3vh;
-    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    padding: 4vh;
     font-family: "League Spartan", sans-serif;
     border: 4px solid #ecf0f3;
     background: #ecf0f3;
     border-radius: 5px;
     box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
+.heure_horloge_numerique div {
+    position: relative;
+    margin: 0 5px;
+    
+}
+
+.heure_horloge_numerique div p {
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 80px;
+    background: #8208e6;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    z-index: 10;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+.heure_horloge_numerique div p:nth-child(2){
+    height: 30px;
+    font-size: .7em;
+    letter-spacing: 0.2em;
+    z-index: 9;
+    font-weight: 500;
+    box-shadow: none;
+    background: #7906d8;
+    text-transform: uppercase;
+}
+
+.heure_horloge_numerique div:nth-child(2) p{
+    background-color: #ff0256;
+}
+.heure_horloge_numerique div:nth-child(2) p:nth-child(2){
+    background-color: #e4004c;
+}
+
+.heure_horloge_numerique div:last-child p{
+    background-color: #3f4040;
+}
+
+.heure_horloge_numerique div:last-child p:nth-child(2){
+    background-color: #2b2a2a;
 }
 
 .dark .heure_horloge_numerique {
@@ -530,4 +579,89 @@ footer ul li {
     background-color: #0e1315;
     box-shadow: -4px -4px 4px rgba(0, 0, 0, 0.56),1px 2px 4px rgba(255, 255, 255, 0.08);  
 }
+
+/*--------------------Style Réveil ---------------------*/
+
+.flex_reveil {
+    margin-top: 1%;
+    font-family: "League Spartan", sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+}
+.horloge_reveil {
+    width: 30%;
+}
+
+.alarm_creator {
+    text-align: center;
+    width: 40%;
+}
+
+.alarm_creator article {
+    text-align: left;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    margin-top: 2vh;
+}
+
+.alarm_creator article div input {
+    margin: 2vh;
+}
+
+.control_heure_reveil {
+    display: flex;
+}
+
+.reveil input {
+    padding-left: 2vh;
+    background: #ecf0f3;
+    height: 35px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
+.reveil input:nth-child(2){
+    width: 30%;
+}
+
+.liste_alarm {
+    text-align: center;
+    padding: 4vh;
+    border: 4px solid #ecf0f3;
+    background: #ecf0f3;
+    border-radius: 5px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
+.liste_alarm h3 {
+    text-decoration: underline;
+}
+
+.liste_alarm button {
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid #ff0256;
+}
+
+.liste_alarm button i {
+    color: #ff0256;
+}
+
+.bloc_alarm {
+    border-bottom: 1px solid #e6e6e6;
+    padding: 1vh;
+}
+
+.notif {
+    color: #00b84c;
+    font-family: "League Spartan", sans-serif;
+    font-size:
+}
+
 
