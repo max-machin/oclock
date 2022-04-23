@@ -15,6 +15,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
     var alarm_venir = document.querySelector('.alarme_venir')
     var alarm_passee = document.querySelector('.alarme_passee')
+    var notif = document.querySelector('.notif')
 
     var temps
     horloge_numerique()
@@ -65,37 +66,43 @@ window.addEventListener("DOMContentLoaded", (event) => {
             }
 
             var all_alarms = document.querySelectorAll('.liste_des_alarmes')
-
+            
             for (var i = 0; i <= all_alarms.length; i++){
-                if (liste_alarm[i] < temps){
-                    content = content.filter((b) => b)
+                if (liste_alarm[i].includes(temps)){
+                    content = content.filter((a) => a)
+
+                    
+                    var p = document.createElement('p')
+                    p.innerHTML = content[i]
+                    notif.appendChild(p)
+
+
                     var li = document.createElement('li')
                     li.innerHTML = content[i] + " passer " 
-                    content = content.filter((b) => b)
                     alarm_passee.appendChild(li)
-                        
-                    
-                    
-                    
 
-                    
-                    
+                    delete content[i]
+                    console.log(content)
+
                     delete all_alarms[i]
                     delete liste_alarm[i]
                     liste_alarm = liste_alarm.filter((a) => a)
                     
-                    if (all_alarms.length > 1){
+                    if (all_alarms.length >= 1){
                         alarm_venir.removeChild(all_alarms[i])
-                    } else {
-                        alarm_venir.removeChild(all_alarms[0])
-                    }
+                    } 
                     
                     
                 }
             }
+
+            
             
         }, 1000)    
 
+        setInterval(() => {
+            notif.innerHTML = ""
+        }, 5000)
     }
 
     
@@ -181,19 +188,30 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
             var new_alarm = ((time.getHours()-1)+":"+time.getMinutes()+":"+time.getSeconds())
     
-            affiche_decompte.innerHTML = `<p class="nom_alarm">${nom_alarm.value}</p> dans : <p class="new_alarm">${ new_alarm}</p> secondes. Programmée pour : "${nouvelle_alarme}"`
+            affiche_decompte.innerHTML = `<p class="nom_alarm"> ${nom_alarm.value} </p> à venir dans : <p class="new_alarm"> ${ new_alarm} </p> secondes. (${nouvelle_alarme})`
             alarm_venir.appendChild(affiche_decompte)
             
             
             liste_temps.push(new_alarm)
             liste_alarm.push(nouvelle_alarme)
             content.push(nom_alarm.value)
-            id++
-
            
         }   
+       
     })   
+
     
+    var btn_delete = document.querySelector('.btn-pause')
+    btn_delete.addEventListener('click', () => {
+        liste_alarm.length = 0
+        liste_temps.length = 0
+        content.length = 0
+        alarm_venir.innerHTML = "<h3>Alarmes à venir</h3>"
+        alarm_passee.innerHTML = "<h3>Alarmes passées</h3>"
+        console.log(liste_alarm)
+        console.log(liste_temps)
+        console.log(content)
+    })
     
     
 })

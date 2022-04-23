@@ -29,6 +29,7 @@ require 'ressources/header.php';
                     <p class="error"></p>
                 </div>
                 <button class="btn-alarm btn-reset"><i class="fa-solid fa-bell"></i></button>
+                <button class="btn-pause"><i class="fa-solid fa-trash"></i></button>
             </article>
         </div>
     </article>
