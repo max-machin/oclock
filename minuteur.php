@@ -1,6 +1,7 @@
 <?php
 require 'ressources/header.php';
 ?>
+<main>
     <h1>Minuteur</h1>
     <section class="section_gen minuteur">
 
@@ -28,12 +29,9 @@ require 'ressources/header.php';
                     <button class="btn-pause none"><i class="fa-solid fa-pause"></i></button>
                     <button class="btn-reset"><i class="fa-solid fa-stopwatch"></i></button>
                 </article>
-                
-
             </div>
-
-            
     </section>
+</main>
 <script type="text/javascript" src="js/minuteur.js"></script>
 <?php
 require 'ressources/footer.php';

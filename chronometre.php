@@ -1,6 +1,7 @@
 <?php
 require 'ressources/header.php';
 ?>
+<main>
     <h1>Chronomètre</h1> 
     <section class="section_gen gen_chrono">
         <div class="componant_gen chrono">
@@ -22,6 +23,7 @@ require 'ressources/header.php';
 
         </div>
     </section>
+</main>
 <script type="text/javascript" src="js/chronometre.js"></script>
 
 <?php

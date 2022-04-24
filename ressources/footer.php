@@ -1,3 +1,4 @@
+
         <footer>
             <h2>O'Clock</h2>
             <ul>
@@ -15,7 +16,7 @@
             </ul>
         </footer>
         
-        </main>
+        
     </body>
     <script src="js/style.js"></script>
 </html>

@@ -60,21 +60,33 @@ window.addEventListener("DOMContentLoaded", (event) => {
             m.style.border = '1px solid #ff0256'
             s.style.border = '1px solid #ff0256'
         } else {
-            start.classList.add('none')
-            pause.classList.remove('none')
-            fin.innerHTML = ""
-            h.style.border = "none"
-            m.style.border = 'none'
-            s.style.border = 'none'
+            if (h.value < 100){
+                if (m.value < 60){
+                    if (s.value < 60){
+                        start.classList.add('none')
+                        pause.classList.remove('none')
+                        fin.innerHTML = ""
+                        h.style.border = "none"
+                        m.style.border = 'none'
+                        s.style.border = 'none'
 
-            function startInterval(){
-                debutChrono = setInterval(function() {
-                    minuteur()
-                }, 1000)
+                        function startInterval(){
+                            debutChrono = setInterval(function() {
+                                minuteur()
+                            }, 1000)
+                        }
+                        startInterval()
+                    } else {
+                        s.style.border = '1px solid #ff0256'
+                    }
+                } else {
+                    m.style.border = '1px solid #ff0256'
+                }
+                
+            } else {
+                h.style.border = '1px solid #ff0256'
             }
-            startInterval()
         }
-        
     })
 
     /**

@@ -1,7 +1,7 @@
 window.addEventListener("DOMContentLoaded", (event) => { 
     /*Récupération du body*/
     var body = document.querySelector('body')
-    const bodytheme = 0
+    var bodytheme
 
     /**Récupération des bouton de control du theme */
     var dark = document.querySelector('.dark_theme')
