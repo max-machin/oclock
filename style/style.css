@@ -102,10 +102,17 @@ h1 {
     font-size: 17px;
 }
 
-.topnav a:hover {
+.links:hover {
     background-color: #3f4040;
     color: white;
     transition: .3s;
+}
+.icon {
+    color: black;
+}
+
+.icon:active {
+    color: white;
 }
   
  .topnav a:nth-child(5):hover {
@@ -360,7 +367,7 @@ footer ul li {
     }
     .componant_control {
         display: flex;
-        justify-content:center;
+        justify-content:center; 
     }
 }
 
