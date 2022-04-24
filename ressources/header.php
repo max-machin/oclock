@@ -28,10 +28,10 @@
         <nav class="nav" id="topnav">
             <div class="topnav" id="myTopnav">
                 <a href="index.php" class="active">Home</a>
-                <a href="horloge.php">Horloge</a>
                 <a href="reveil.php">Réveil</a>
                 <a href="minuteur.php">Minuteur</a>
                 <a href="chronometre.php">Chronomètre</a>
+                <a href="horloge.php">Horloge</a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <i class="fa fa-bars"></i>
                 </a>

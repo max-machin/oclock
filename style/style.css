@@ -102,19 +102,14 @@ h1 {
     font-size: 17px;
 }
 
-.topnav a:nth-child(2):hover {
+.topnav a:hover {
     background-color: #3f4040;
     color: white;
     transition: .3s;
 }
-.topnav a:nth-child(3):hover {
-    background-color: #ff0256;
-    color: white;
-    transition: .3s;
-}
   
-.topnav a:nth-child(4):hover, .topnav a:nth-child(5):hover {
-    background-color: #8208e6;
+ .topnav a:nth-child(5):hover {
+    background-color: #ff0256;
     color: white;
     transition: .3s;
 }
@@ -139,6 +134,7 @@ h1 {
 @media screen and (max-width: 600px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive .icon {
+        
       position: absolute;
       right: 0;
       top: 0;
@@ -362,11 +358,14 @@ footer ul li {
     .minuteur {
         width: 75%;
     }
+    .componant_control {
+        display: flex;
+        justify-content:center;
+    }
 }
 
 @media (max-width: 391px){
     .minuteur {
-        margin-top: 5vh;
         width: 85%;
     }
 }
