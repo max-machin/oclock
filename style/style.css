@@ -334,6 +334,66 @@ footer ul li {
  .componant_gen button:active, .reveil button:active {
     box-shadow: 5px 5px 10px white, -5px -5px 10px #cbced1;
 }
+
+/*--------------------Style INDEX ---------------------*/
+
+.index {
+    text-align: center;
+    margin-top: 4vh;
+}
+
+.nom {
+    color: rgb(34, 32, 32);
+}
+
+.index h2, .index h3 {
+    font-family: "League Spartan", sans-serif;
+}
+.index h2 , .index span{
+    font-family: "League Spartan", sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+}
+
+.article_index h2 {
+    margin-right: 1vh;
+}
+
+.article_index div {
+    display: flex;
+    justify-content: center;
+}
+.article_index span {
+    border-right: 1px black solid;
+}
+
+.article_index p {
+    font-family: 'Libre Baskerville', sans-serif;
+}
+
+.grid {
+    margin-top: 4vh;
+    margin-bottom: 7vh;
+    justify-content: center;
+    display: grid;
+    gap: 1.5vh;
+    grid-template-columns: repeat(2, 200px);
+}
+
+.grid div {
+    display: flex;
+    padding: 3vh 2.5vh;
+    flex-direction: column;
+    background: #ecf0f3;
+    border-radius: 3px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
+.grid i {
+    margin-bottom: 1vh;
+    font-size: 30px;
+    color:#2b2a2a ;
+}
 /*--------------------Style MINUTEUR ---------------------*/
 
 .componant_control {
